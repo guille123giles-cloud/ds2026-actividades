@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Guillermo Giles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="estudios.html">Estudios</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div class="contenedor-cv">
+        <main>
+            <h1>Mandame un mensaje</h1>
+            <p>Si querés contactarme por algún proyecto o simplemente charlar de sistemas, completá el formulario.</p>
+
+            <form action="#">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre acá" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje (mínimo 10 caracteres):</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" minlength="10" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

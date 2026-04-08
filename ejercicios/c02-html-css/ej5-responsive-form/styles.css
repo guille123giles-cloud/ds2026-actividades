@@ -1,0 +1,123 @@
+/* 1. Definición de Variables (Custom Properties) */
+:root {
+    --color-primario: #2c3e50;
+    --color-acento: #3498db;
+    --color-fondo: #f4f7f6;
+    --color-texto: #333;
+    --blanco: #ffffff;
+    --borde-redondeado: 10px;
+    --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Reseteo Global y Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental para el Ejercicio 4 y 5 */
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 3. Navegación con Flexbox */
+nav ul {
+    display: flex; /* Activamos Flexbox */
+    justify-content: center; /* Centramos los links */
+    gap: 20px; /* Espaciado automático entre items */
+    list-style: none;
+    background-color: var(--color-primario);
+    padding: 15px;
+    border-radius: var(--borde-redondeado);
+}
+
+nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--color-acento);
+}
+
+/* 4. Contenedor Principal (Box Model y Estilo) */
+.contenedor-cv {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: var(--blanco);
+    padding: 40px;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+}
+
+h1, h2, h3 {
+    color: var(--color-primario);
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* 5. Estilos para el Formulario (Ejercicio 5) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-primario);
+}
+
+/* 6. Diseño Responsive (Media Queries) */
+/* Se activa cuando la pantalla es menor a 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Menú vertical en celulares */
+        align-items: center;
+    }
+
+    .contenedor-cv {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
