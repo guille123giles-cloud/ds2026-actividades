@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3 - Buscador de Libros</title>
+    <link rel="icon" href="data:,">
+    <script src="app.js" defer></script>
+    <style>
+        .tarjeta { 
+            border: 1px solid #ccc; 
+            padding: 15px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscador Open Library</h1>
+    
+    <input type="text" id="input-busqueda" placeholder="Ingrese título o autor...">
+    <button id="btn-buscar">Buscar</button>
+    
+    <p id="mensaje-error" style="color: red; display: none;"></p>
+    <p id="cargando" style="display: none;">Buscando libros...</p>
+    
+    <div id="resultados"></div>
+</body>
+</html>
