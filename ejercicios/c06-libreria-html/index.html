@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="catalogo.html">Catálogo</a>
@@ -42,6 +42,98 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Bienvenido a Mi Librería</h1>
+            <p class="lead mb-4">Descubrí las mejores historias en nuestro catálogo completo.</p>
+            <!-- Botón con link al catálogo -->
+            <a href="catalogo.html" class="btn btn-light btn-lg">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Sección de Libros Destacados -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Libros Destacados</h2>
+        <!-- Grilla de Bootstrap -->
+        <div class="row g-4">
+            
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Portada de 1984">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">1984</h5>
+                        <p class="card-text text-muted">George Orwell</p>
+                        <!-- Link de Ver más a libro.html -->
+                        <a href="libro.html" class="btn btn-outline-primary mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Portada de El Aleph">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">El Aleph</h5>
+                        <p class="card-text text-muted">Jorge Luis Borges</p>
+                        <a href="libro.html" class="btn btn-outline-primary mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Portada de Rayuela">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rayuela</h5>
+                        <p class="card-text text-muted">Julio Cortázar</p>
+                        <a href="libro.html" class="btn btn-outline-primary mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Portada de Ficciones">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ficciones</h5>
+                        <p class="card-text text-muted">Jorge Luis Borges</p>
+                        <a href="libro.html" class="btn btn-outline-primary mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Portada de Cumbres Borrascosas">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cumbres Borrascosas</h5>
+                        <p class="card-text text-muted">Emily Brontë</p>
+                        <a href="libro.html" class="btn btn-outline-primary mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Portada de El Túnel">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">El Túnel</h5>
+                        <p class="card-text text-muted">Ernesto Sabato</p>
+                        <a href="libro.html" class="btn btn-outline-primary mt-auto">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Bootstrap JS (Bundle) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
