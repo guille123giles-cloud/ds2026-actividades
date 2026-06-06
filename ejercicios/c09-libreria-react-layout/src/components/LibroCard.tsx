@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 // Definimos las props tipadas con TypeScript
 type LibroCardProps = {
+  id: number;
   titulo: string;
   autor: string;
   precio: number;
 };
 
-export default function LibroCard({ titulo, autor, precio }: LibroCardProps) {
+export default function LibroCard({ id, titulo, autor, precio }: LibroCardProps) {
   // Estado local para los "Me gusta"
   const [likes, setLikes] = useState<number>(0);
 
@@ -20,12 +22,17 @@ export default function LibroCard({ titulo, autor, precio }: LibroCardProps) {
         <Card.Text>
           Precio: ${precio}
         </Card.Text>
-        <Button 
-            variant="primary" 
-            onClick={() => setLikes(likes + 1)}
-        >
-          Me gusta ({likes})
-        </Button>
+        <div className="d-flex justify-content-between align-items-center">
+          <Button 
+              variant="primary" 
+              onClick={() => setLikes(likes + 1)}
+          >
+            Me gusta ({likes})
+          </Button>
+          <Link to={`/libros/${id}`} className="btn btn-outline-secondary">
+            Ver más
+          </Link>
+        </div>
       </Card.Body>
     </Card>
   );
