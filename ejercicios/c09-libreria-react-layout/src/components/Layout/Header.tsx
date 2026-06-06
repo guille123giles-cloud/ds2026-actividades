@@ -1,6 +1,6 @@
 import { Navbar, Container } from 'react-bootstrap';
 
-export default function NavbarLibreria() {
+export default function Header() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
