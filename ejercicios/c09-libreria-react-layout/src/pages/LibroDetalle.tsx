@@ -4,7 +4,6 @@ import { Container, Card } from 'react-bootstrap';
 export function LibroDetalle() {
   const { id } = useParams<{ id: string }>();
 
-  // Mock de buscar el libro (en realidad vendría de un backend o estado global)
   const libroId = parseInt(id || '0');
   
   return (
@@ -14,7 +13,7 @@ export function LibroDetalle() {
         <Card.Body>
           <Card.Title>Libro ID: {libroId}</Card.Title>
           <Card.Text>
-            Aquí iría el detalle del libro, su descripción completa, más imágenes, etc.
+            (detalles del libro)
           </Card.Text>
         </Card.Body>
       </Card>
